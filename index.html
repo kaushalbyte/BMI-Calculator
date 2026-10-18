@@ -4,22 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-    <h1 class="title">BMI Calculator</h1>
+    <div class="container">
+        <h1 class="title">BMI Calculator</h1>
+        <h1 class="bmi-title">BMI<span id="red-letter">.</span></h1>
     <div class="height">
-        <h3 class="label">Enter your height in centimeters: </h3>
-        <input type="number" id="height" name="height">
+        <input type="number" id="height-input" name="height" placeholder="Height (cm)">
     </div>
     <div class="weight">
-        <h3 class="label">Enter your weight in kilograms: </h3>
-        <input type="number" id="weight" name="weight">
+        <input type="number" id="weight-input" placeholder="Weight (kg)" name="weight">
         
     </div>
     <div class="calculate">
-        <button >Calculate BMI</button>
+        <button class="arrow-btn">Calculate BMI <span class="arrow-btw">&rarr;</span></button>
     </div>
     <div class="result"></div>
     <div class="guide">
@@ -29,6 +32,8 @@
         <p><strong>Overweight:</strong> BMI 25 to 29.9</p>
         <p><strong>Obesity:</strong> BMI 30 or greater</p>
     </div>
+    </div>
+    
     
     <script src="script.js"></script>
 </body>
